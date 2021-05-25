@@ -1,5 +1,9 @@
 .app-list-item {
     font-size: 1.25rem;
+    background-color: #fff;
+}
+.app-list-item-actions {
+    background-color: #fff;
 }
 
 .app-list-item button {
@@ -9,13 +13,21 @@
     font-size: 17px;
     border: none;
     cursor: pointer;
+    background-color: #fff;
+}
+.app-list-item i {
+    background-color: #fff;
+}
+
+.app-list-item span {
+    background-color: #fff;
 }
 .app-list-item button:focus {
     box-shadow: none;
     outline: none;
 }
 .app-list-item .btn-star {
-    color: #ffd700;
+    color: #15a32c;
 }
 .app-list-item .btn-trash {
     color: red;
@@ -46,9 +58,21 @@
 }
 
 .app-list-item.important .app-list-item-label {
-    color: #ffd700;
+    padding: 0 5px;
+    color: #15a32c;
 }
 
 .app-list-item.important .btn-star {
-    color: #aeaeae;
+    border: 1px solid #15a32c;
+    border-radius: 100%;
+}
+
+.add-like {
+    color: #1cd7dd;
+    transition: all 0.5s ease 0s;
+}
+.app-list-item.like .add-like {
+    transform: scaleX(-1);
+    transition: all 0.5s ease 0s;
+    color: #4042d1;
 }

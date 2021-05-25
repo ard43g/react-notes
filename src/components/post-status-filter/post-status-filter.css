@@ -1,12 +1,15 @@
 .btn {
-	border: 1px solid;
-	border-radius: 5px;
-	color: #808080;
-	
+    border: 1px solid;
+    border-radius: 5px;
+    color: #808080;
 }
 
 .btn-all {
-	border-color: #808080;
-	background-color: #489EB0;
-	color: #ffffff;
+    border-color: #808080;
+    background-color: #489eb0;
+    color: #ffffff;
+}
+
+.btn-success {
+    color: #fff;
 }

@@ -1,7 +1,14 @@
 .app-list {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .app-list .list-group-item {
-  padding: 20px 35px 10px 35px;
-  margin-top: 10px;
+    padding: 20px 35px 10px 35px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.list-group-item .app-list-item {
+    background-color: #fff;
+}
+.app-list .list-group-item div {
+    background-color: #fff;
 }

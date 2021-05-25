@@ -1,0 +1,8 @@
+.name-form {
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.name-form .name-label {
+    max-width: 300px;
+    margin-right: 13px;
+}
