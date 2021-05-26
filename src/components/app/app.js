@@ -14,9 +14,11 @@ export default class App extends Component {
         super(props);
         this.state = {
             data: [
-                { label: "Going to learn React", important: true, like: false, id: "1" },
-                { label: "Going to learn JSX", important: false, like: false, id: "2" },
-                { label: "Going to learn Redux", important: false, like: false, id: "3" },
+                { label: "фильтр по записям", important: false, like: false, id: "1" },
+                { label: "иммутабельное изменение стейта", important: true, like: false, id: "2" },
+                { label: "react-icon svg", important: false, like: true, id: "3" },
+                { label: "уникальный key для новых полей", important: true, like: false, id: "4" },
+                { label: "счетчик записей", important: false, like: true, id: "5" },
             ],
             term: "",
             filter: "all",
@@ -31,8 +33,6 @@ export default class App extends Component {
         this.onFilterSelect = this.onFilterSelect.bind(this);
         this.addName = this.addName.bind(this);
         this.onChangeName = this.onChangeName.bind(this);
-
-        this.maxId = 4;
     }
 
     deleteItem(id) {
@@ -86,7 +86,6 @@ export default class App extends Component {
 
     onToggleImportant(id) {
         this.setState(({ data }) => {
-            console.log(data);
             const index = data.findIndex((elem) => elem.id === id);
             const old = data[index];
             const newItem = { ...old, important: !old.important };
@@ -141,7 +140,6 @@ export default class App extends Component {
     }
 
     render() {
-        window.state = this.state;
         const { data, term, filter, user, changeUserName } = this.state;
         const liked = data.filter((item) => item.like).length;
         const allPosts = data.length;
